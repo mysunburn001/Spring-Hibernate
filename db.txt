@@ -1,0 +1,10 @@
+create table errorlog(logid int not null primary key auto_increment, 
+username varchar(50) not null, fk_error_code int not null,
+fk_app_code int not null,constraint foreign key (fk_app_code) references applist (appid), 
+constraint foreign key (fk_error_code) references errorlist (errorid));
+
+create table errorlist(errorid int not null primary key auto_increment, 
+description varchar(50) not null);
+
+create table applist(appid int not null primary key auto_increment,description varchar(50) not null,
+status int not null);
