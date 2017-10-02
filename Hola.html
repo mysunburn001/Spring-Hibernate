@@ -1,0 +1,65 @@
+<html>
+
+	<head>
+		<title>Hola </title> <font color="white">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<script type="text/javascript">
+
+			function MuestraDatos(){
+				
+				var nombre = $("#nombre").val();
+				alert(nombre)
+				var apellido = $("#apellido").val();
+				alert(apellido)
+				var email = $("#email").val();
+				alert(email);
+
+
+				var varon = $("#varon").val();
+				//alert(varon)
+				var mujer = $("#mujer").val();
+				//alert(mujer)
+
+				if (varon != "") {
+
+					alert(varon);
+				}else{
+					alert(mujer);
+				}
+				
+			}
+			
+		</script>
+
+	</head>
+		
+	<body bgcolor="light blue">
+		<h1 style="text-align: left;">Hola</h1> <font color="white">
+		<p>Como estas, me gusta escribir en computadora y quiero aprender a escribir con las 2 manos haci bien rapido :v y ya no se que mas decir y creo que voy a dejar un resumen de algo menso solo para llenar la pagina xdxd, ah y o le entendi a lo de javascrpt pero bueno ya voy avanzando ok y eso me gusta y nose que mas escribir men y pues quiero llenar mas la hoja y pues escribo con solo un dedo de la mano y no se como le voy a hacer para escribir con las 2 manos y bien rapido :v y que letra tan pequena, wow la letra ñ en la palabra pequena le hace algo a la programacion.<p/> 
+	<Form style="text-align: left;">
+		<label for="nombre">Nombre: </label>
+		<input type="text" name="nombre" id="nombre">
+		<br/> <br/>
+		<label for="apellido">Apellido: </label>
+		<input type="text" name="apellido" id="apellido">
+		<br/> <br/>
+		<label for="email">Email: </label>
+		<input type="text" name="email" id="email">
+		<br/> <br/>
+		<input type="radio" name="sexo" id="varon" value="Varón">
+		<label for="varon">Varón: </label>
+		<br/> <br/>
+		<input type="radio" name="sexo" id="mujer" value="Mujer">
+		<label for="mujer">Mujer: </label>
+	<Form/>
+		<br> <br/>
+		<input type="button" name="boton" value="Guardar" onclick="MuestraDatos()">
+	
+	</body>
+</html>
+	
+<!--Hacer formulario con datos basicos y que muestre alerta con javascript-->
+<!--W3SCHOOLS-->
+<!--STACKOVERFLOW-->
